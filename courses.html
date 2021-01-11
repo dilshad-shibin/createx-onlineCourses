@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Createx | Online Courses - Courses</title>
+
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="Createx - Multipurpose Bootstrap Template">
+    <meta name="keywords" content="bootstrap, business, creative agency, construction, services, e-commerce, mobile app showcase, multipurpose, shop, ui kit, marketing, seo, landing, html5, css3, javascript, gallery, slider, touch, creative">
+    <meta name="author" content="Createx Studio">
+
+    <!-- Viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon and Touch Icons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/site.webmanifest">
+    <link rel="mask-icon" color="#5bbad5" href="assets/img/safari-pinned-tab.svg">
+    <meta name="msapplication-TileColor" content="#766df4">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Vendor Styles-->
+    <link rel="stylesheet" media="screen" href="assets/vendor/simplebar/dist/simplebar.min.css"/>
+    <link rel="stylesheet" media="screen" href="assets/vendor/tiny-slider/dist/tiny-slider.css"/>
+
+    <!-- Main Theme Styles + Bootstrap-->
+    <link rel="stylesheet" media="screen" href="assets/css/demo/online-courses/theme.min.css">
+    
+    <!-- Page loading styles-->
+    <style>
+      .cs-page-loading {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-transition: all .4s .2s ease-in-out;
+        transition: all .4s .2s ease-in-out;
+        background-color: #fff;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 9999;
+      }
+      .cs-page-loading.active {
+        opacity: 1;
+        visibility: visible;
+      }
+      .cs-page-loading-inner {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        -webkit-transition: opacity .2s ease-in-out;
+        transition: opacity .2s ease-in-out;
+        opacity: 0;
+      }
+      .cs-page-loading.active > .cs-page-loading-inner {
+        opacity: 1;
+      }
+      .cs-page-loading-inner > span {
+        display: block;
+        font-size: 1rem;
+        font-weight: normal;
+        color: #787a80;
+      }
+      .cs-page-spinner {
+        display: inline-block;
+        width: 2.75rem;
+        height: 2.75rem;
+        margin-bottom: .75rem;
+        vertical-align: text-bottom;
+        background-color: #cfcfd1; 
+        border-radius: 50%;
+        opacity: 0;
+        -webkit-animation: spinner .75s linear infinite;
+        animation: spinner .75s linear infinite;
+      }
+      @-webkit-keyframes spinner {
+        0% {
+          -webkit-transform: scale(0);
+          transform: scale(0);
+        }
+        50% {
+          opacity: 1;
+          -webkit-transform: none;
+          transform: none;
+        }
+      }
+      @keyframes spinner {
+        0% {
+          -webkit-transform: scale(0);
+          transform: scale(0);
+        }
+        50% {
+          opacity: 1;
+          -webkit-transform: none;
+          transform: none;
+        }
+      }
+    </style>
+
+    <!-- Page loading scripts-->
+    <script>
+      (function () {
+        window.onload = function () {
+          var preloader = document.querySelector('.cs-page-loading');
+          preloader.classList.remove('active');
+          setTimeout(function () {
+            preloader.remove();
+          }, 2000);
+        };
+      })();
+    </script>
+
+    <!-- Demo switcher off-canvas toggle styles -->
+    <style>
+      .cs-demo-switcher {
+        position: fixed;
+        display: block;
+        top: 50%;
+        right: 1rem;
+        z-index: 100;
+      }
+      .cs-demo-switcher-inner {
+        width: 3rem;
+        height: 3rem;
+        border: 1px solid #e5e8ed;
+        border-radius: 50%;
+        background-color: #fff;
+        color: #1e212c;
+        font-size: 1.25rem;
+        line-height: 3rem;
+        text-align: center;
+        text-decoration: none;
+        box-shadow: 0px 10px 15px 0px rgba(30,33,44,0.10);
+      }
+    </style>
+
+    <!-- Google Tag Manager -->
+    <script>
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-WKV3GT5');
+    </script>
+  </head>
+
+  <!-- Body-->
+  <body>
+    
+    <!-- Google Tag Manager (noscript)-->
+    <noscript>
+      <iframe src="//www.googletagmanager.com/ns.html?id=GTM-WKV3GT5" height="0" width="0" style="display: none; visibility: hidden;"></iframe>
+    </noscript>
+
+    <!-- Page loading spinner-->
+    <div class="cs-page-loading active">
+      <div class="cs-page-loading-inner">
+        <div class="cs-page-spinner"></div><span>Loading...</span>
+      </div>
+    </div>
+
+    <!-- Main content-->
+    <!-- Wraps everything except footer to push footer to the bottom of the page if there is little content -->
+    <main class="cs-page-wrapper position-relative">
+
+
+      <!-- Demo switcher off-canvas -->
+      <div id="demo-switcher" class="cs-offcanvas cs-offcanvas-right">
+        <div class="cs-offcanvas-cap d-block border-bottom">
+          <div class="d-flex justify-content-between align-items-center">
+            <h2 class="h5 mb-0">Choose Demo</h2>
+            <button class="close mr-n1" type="button" data-dismiss="offcanvas" aria-label="Close">
+              <span class="h3 font-weight-normal mb-0" aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="d-flex pt-3">
+            <a href="../../index.html" class="btn btn-sm btn-outline-secondary btn-block my-0 mr-2">
+              <i class="cxi-home font-size-base mr-1"></i>
+             Main Page
+            </a>
+            <a href="../components/typography.html" class="btn btn-sm btn-outline-secondary btn-block my-0">
+              <i class="cxi-files font-size-base mr-1"></i>
+             Docs / UI Kit
+            </a>
+          </div>
+        </div>
+        <div class="cs-offcanvas-body pt-4 pb-3" data-simplebar data-simplebar-auto-hide="true">
+          <a href="../creative-agency/index.html" class="d-block cs-heading-highlight box-shadow-sm rounded-bottom pb-3 mb-4">
+            <img src="../../assets/img/demo-switcher/creative-agency.jpg" class="d-block rounded-top mb-2" alt="Creative Agency">
+            <h6 class="mb-0 pt-1 text-center">Creative Agency</h6>
+          </a>
+          <a href="../ecommerce/index.html" class="d-block cs-heading-highlight box-shadow-sm rounded-bottom pb-3 mb-4">
+            <img src="../../assets/img/demo-switcher/ecommerce.jpg" class="d-block rounded-top mb-2" alt="E-Commerce">
+            <h6 class="mb-0 pt-1 text-center">E-Commerce</h6>
+          </a>
+          <a href="../construction/index.html" class="d-block cs-heading-highlight box-shadow-sm rounded-bottom pb-3 mb-4">
+            <img src="../../assets/img/demo-switcher/construction.jpg" class="d-block rounded-top mb-2" alt="Construction Bureau">
+            <h6 class="mb-0 pt-1 text-center">Construction Bureau</h6>
+          </a>
+          <a href="../seo-agency/index.html" class="d-block cs-heading-highlight box-shadow-sm rounded-bottom pb-3 mb-4">
+            <img src="../../assets/img/demo-switcher/seo-agency.jpg" class="d-block rounded-top mb-2" alt="SEO & Marketing Agency">
+            <h6 class="mb-0 pt-1 text-center">SEO &amp; Marketing Agency</h6>
+          </a>
+          <a href="../online-courses/index.html" class="d-block cs-heading-highlight box-shadow-sm rounded-bottom pb-3 mb-4">
+            <img src="../../assets/img/demo-switcher/online-courses.jpg" class="d-block rounded-top mb-2" alt="Online Courses">
+            <h6 class="mb-0 pt-1 text-center">Online Courses</h6>
+          </a>
+        </div>
+        <div class="cs-offcanvas-cap flex-column border-top">
+          <a href="https://themes.getbootstrap.com/product/createx-multipurpose-template-ui-kit/" class="btn btn-primary btn-block" target="_blank" rel="noopener">
+            <i class="cxi-cart mt-n1 mr-2"></i>
+            Buy Createx
+          </a>
+        </div>
+      </div>
+
+
+      <!-- Demo switcher off-canvas toggle -->
+      <a href="#" class="cs-demo-switcher" data-toggle="offcanvas" data-target="demo-switcher">
+        <div class="cs-demo-switcher-inner" data-toggle="tooltip" data-placement="left" title="Choose Demo">
+          <i class="cxi-layouts"></i>
+        </div>
+      </a>
+
+
+      <!-- Sign in modal-->
+      <div class="modal fade" id="modal-signin" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content border-0">
+
+            <!-- Sign in form -->
+            <div class="cs-view show" id="modal-signin-view">
+              <div class="modal-header border-0 pb-0 px-md-5 px-4 d-block position-relative">
+                <h3 class="modal-title mt-4 mb-0 text-center">Sign in</h3>
+                <button type="button" class="close position-absolute" style="top: 1.5rem; right: 1.5rem;" data-dismiss="modal" aria-label="Close">
+                  <i class="cxi-cross" aria-hidden="true"></i>
+                </button>
+              </div>
+              <div class="modal-body px-md-5 px-4">
+                <p class="font-size-sm text-muted text-center">Sign in to your account using email and password provided during registration.</p>
+                <form class="needs-validation" novalidate>
+                  <div class="form-group">
+                    <label for="signin-email">Email</label>
+                    <input type="email" class="form-control" id="signin-email" placeholder="Your email address" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="signin-password" class="form-label">Password</label>
+                    <div class="cs-password-toggle input-group-overlay">
+                      <input type="password" class="form-control appended-form-control" id="signin-password" placeholder="Your password" required>
+                      <div class="input-group-append-overlay">
+                        <label class="btn cs-password-toggle-btn input-group-text">
+                          <input type="checkbox" class="custom-control-input">
+                          <i class="cxi-eye cs-password-toggle-indicator"></i>
+                          <span class="sr-only">Show password</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center form-group">
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="remember-me" checked>
+                      <label for="remember-me" class="custom-control-label">Remember me</label>
+                    </div>
+                    <a href="#" class="font-size-sm text-decoration-none">Forgot password?</a>
+                  </div>
+                  <button type="submit" class="btn btn-primary btn-hover-shadow btn-block">Sign in</button>
+                  <p class="font-size-sm pt-4 mb-0">
+                    Don't have an account?
+                    <a href="#" class="font-weight-bold text-decoration-none" data-view="#modal-signup-view">Sign up</a>
+                  </p>
+                </form>
+              </div>
+            </div>
+
+            <!-- Sign up form -->
+            <div class="cs-view" id="modal-signup-view">
+              <div class="modal-header border-0 pb-0 px-md-5 px-4 d-block position-relative">
+                <h3 class="modal-title mt-4 mb-0 text-center">Sign up</h3>
+                <button type="button" class="close position-absolute" style="top: 1.5rem; right: 1.5rem;" data-dismiss="modal" aria-label="Close">
+                  <i class="cxi-cross" aria-hidden="true"></i>
+                </button>
+              </div>
+              <div class="modal-body px-md-5 px-4">
+                <p class="font-size-sm text-muted text-center">Sign in to your account using email and password provided during registration.</p>
+                <form class="needs-validation" novalidate>
+                  <div class="form-group">
+                    <label for="signup-name">Full name</label>
+                    <input type="text" class="form-control" id="signup-name" placeholder="Your full name" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="signup-email">Email</label>
+                    <input type="email" class="form-control" id="signup-email" placeholder="Your email address" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="signup-password" class="form-label">Password</label>
+                    <div class="cs-password-toggle input-group-overlay">
+                      <input type="password" class="form-control appended-form-control" id="signup-password" placeholder="Your password" required>
+                      <div class="input-group-append-overlay">
+                        <label class="btn cs-password-toggle-btn input-group-text">
+                          <input type="checkbox" class="custom-control-input">
+                          <i class="cxi-eye cs-password-toggle-indicator"></i>
+                          <span class="sr-only">Show password</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="signup-confirm-password" class="form-label">Confirm password</label>
+                    <div class="cs-password-toggle input-group-overlay">
+                      <input type="password" class="form-control appended-form-control" id="signup-confirm-password" placeholder="Confirm your password" required>
+                      <div class="input-group-append-overlay">
+                        <label class="btn cs-password-toggle-btn input-group-text">
+                          <input type="checkbox" class="custom-control-input">
+                          <i class="cxi-eye cs-password-toggle-indicator"></i>
+                          <span class="sr-only">Show password</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="btn btn-primary btn-hover-shadow btn-block" type="submit">Sign up</button>
+                  <p class="font-size-sm pt-4 mb-0">Already have an account?
+                    <a href="#" class="font-weight-bold text-decoration-none" data-view="#modal-signin-view">Sign in</a>
+                  </p>
+                </form>
+              </div>
+            </div>
+            <div class="modal-body text-center px-0 pt-2 pb-4">
+              <hr>
+              <p class="font-size-sm text-heading mb-3 pt-4">Or sign in with</p>
+              <a href="#" class="social-btn mx-1 mb-2" data-toggle="tooltip" title="Facebook">
+                <i class="cxi-facebook"></i>
+              </a>
+              <a href="#" class="social-btn mx-1 mb-2" data-toggle="tooltip" title="Google">
+                <i class="cxi-google"></i>
+              </a>
+              <a href="#" class="social-btn mx-1 mb-2" data-toggle="tooltip" title="Twitter">
+                <i class="cxi-twitter"></i>
+              </a>
+              <a href="#" class="social-btn mx-1 mb-2" data-toggle="tooltip" title="LinkedIn">
+                <i class="cxi-linkedin"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Navbar -->
+      <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page -->
+      <header class="cs-header navbar navbar-expand-lg navbar-light navbar-sticky">
+        <div class="container px-0 px-xl-3">
+          <a class="navbar-brand order-lg-1 mr-lg-5 mr-0 pr-lg-2" href="index.html">
+            <img src="../../assets/img/online-courses/logo-dark.svg" alt="Createx Logo" width="130">
+          </a>
+          <div class="d-flex align-items-center order-lg-3">
+            <a class="btn btn-gradient btn-hover-shadow d-sm-inline-block d-none ml-4" href="contacts.html">Get consultation</a>
+            <a href="#modal-signin" data-toggle="modal" data-view="#modal-signin-view" class="btn-link d-lg-inline-block d-none ml-4 text-decoration-none text-nowrap">
+              <i class="cxi-profile mt-n1 mr-2 lead align-middle"></i>
+              Sign in / up
+            </a>
+            <button class="navbar-toggler ml-1 mr-n3" type="button" data-toggle="collapse" data-target="#navbarCollapse1" aria-expanded="false">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+          <nav class="collapse navbar-collapse order-lg-2" id="navbarCollapse1">
+            <ul class="navbar-nav mr-auto text-nowrap">
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active" href="#" data-toggle="dropdown">Courses</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="courses.html">Courses Grid</a></li>
+                  <li><a class="dropdown-item" href="course-single.html">Single Course</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Events</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="events-list.html">Events List</a></li>
+                  <li><a class="dropdown-item" href="events-grid.html">Events Grid</a></li>
+                  <li><a class="dropdown-item" href="event-single.html">Event Single</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Blog</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="blog.html">Blog grid</a></li>
+                  <li><a class="dropdown-item" href="blog-single.html">Single Post</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacts.html">Contacts</a>
+              </li>
+              <li class="nav-item d-lg-none d-block">
+                <a href="#modal-signin" data-toggle="modal" data-view="#modal-signin-view" class="nav-link text-decoration-none">
+                  <i class="cxi-profile mt-n1 mr-2 lead align-middle"></i>
+                  Sign in / up
+                </a>
+              </li>
+              <li class="nav-item d-sm-none d-block">
+                <a class="btn btn-sm btn-gradient btn-hover-shadow m-3" href="contacts.html">Get consultation</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+
+      <!-- Courses grid-->
+      <section class="mt-4 pt-lg-5 pt-4 pb-lg-6 pb-5 bg-no-repeat bg-size-contain bg-position-top" style="background-image: url(../../assets/img/online-courses/courses/shape.svg);">
+        <div class="container py-2">
+
+          <!-- Filterable grid container. IMPORTANT: it should wrap filters/sorters and target grid of items in order for plugin to work! -->
+          <div data-filter-grid>
+            <h3 class="h6 mb-2 text-uppercase text-center">Enjoy your studying!</h3>
+            <h2 class="h1 mb-lg-5 pb-md-2 text-center">Our online courses</h2>
+            <div class="row mb-lg-5 mb-4 pb-md-2">
+              <div class="col-sm-8">
+                <div data-simplebar data-simplebar-auto-hide="false">
+
+                  <!-- Filter navs -->
+                  <ul class="nav nav-tabs nav-fill flex-nowrap mb-3 text-nowrap">
+                    <li class="nav-item mb-0">
+                      <span class="nav-link active" data-filter="all">
+                        All
+                        <sup class="ml-1">12</sup>
+                      </span>
+                    </li>
+                    <li class="nav-item mb-0">
+                      <span class="nav-link" data-filter=".marketing">
+                        Marketing
+                        <sup class="ml-1">4</sup>
+                      </span>
+                    </li>
+                    <li class="nav-item mb-0">
+                      <span class="nav-link" data-filter=".management">
+                        Management
+                        <sup class="ml-1">3</sup>
+                      </span>
+                    </li>
+                    <li class="nav-item mb-0">
+                      <span class="nav-link" data-filter=".hr-recruiting">
+                        HR &amp; Recruiting
+                        <sup class="ml-1">5</sup>
+                      </span>
+                    </li>
+                    <li class="nav-item mb-0">
+                      <span class="nav-link" data-filter=".design">
+                        Design
+                        <sup class="ml-1">2</sup>
+                      </span>
+                    </li>
+                    <li class="nav-item mb-0">
+                      <span class="nav-link" data-filter=".development">
+                        Development
+                        <sup class="ml-1">3</sup>
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-4 offset-lg-1 mt-sm-0 mt-4">
+
+                <!-- Search input -->
+                <div class="input-group-overlay form-group mb-0">
+                  <input class="form-control appended-form-control" type="text" placeholder="Search courses">
+                  <div class="input-group-append-overlay">
+                    <span class="input-group-text">
+                      <button class="btn btn-link px-0" type="button">
+                        <i class="cxi-search mt-n1 text-muted"></i>
+                      </button>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <!-- Filterable grid of items -->
+            <div class="row">
+
+              <!-- Item -->
+              <div class="cs-grid-item marketing col-lg-4 col-sm-6 mb-sm-grid-gutter mb-3">
+                <article class="cs-image-scale card card-hover box-shadow h-100">
+                  <a class="cs-image-inner card-header p-0 border-0 card-image-top" href="course-single.html">
+                    <img src="../../assets/img/online-courses/courses/curator/01.jpg" alt="Jerome Bell">
+                  </a>
+                  <div class="card-body pb-1">
+                    <span class="badge badge-success mb-3">Marketing</span>
+                    <h3 class="h5 mb-2 pt-1 nav-dark">
+                      <a class="nav-link" href="course-single.html">The Ultimate Google Ads Training Course</a>
+                    </h3>
+                  </div>
+                  <div class="card-footer pt-2 pb-4 border-0">
+                    <div class="text-muted">
+                      <span class="font-weight-bold text-primary">$100</span>
+                      <span class="text-border px-1">|</span>
+                      by Jerome Bell
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <!-- Item -->
+              <div class="cs-grid-item management col-lg-4 col-sm-6 mb-sm-grid-gutter mb-3">
+                <article class="cs-image-scale card card-hover box-shadow h-100">
+                  <a class="cs-image-inner card-header p-0 border-0 card-image-top" href="course-single.html">
+                    <img src="../../assets/img/online-courses/courses/curator/02.jpg" alt="Marvin McKinney">
+                  </a>
+                  <div class="card-body pb-1">
+                    <span class="badge badge-info mb-3">Management</span>
+                    <h3 class="h5 mb-2 pt-1 nav-dark">
+                      <a class="nav-link" href="course-single.html">Product Management Fundamentals</a>
+                    </h3>
+                  </div>
+                  <div class="card-footer pt-2 pb-4 border-0">
+                    <div class="text-muted">
+                      <span class="font-weight-bold text-primary">$480</span>
+                      <span class="text-border px-1">|</span>
+                      by Marvin McKinney
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <!-- Item -->
+              <div class="cs-grid-item hr-recruiting col-lg-4 col-sm-6 mb-sm-grid-gutter mb-3">
+                <article class="cs-image-scale card card-hover box-shadow h-100">
+                  <a class="cs-image-inner card-header p-0 border-0 card-image-top" href="course-single.html">
+                    <img src="../../assets/img/online-courses/courses/curator/03.jpg" alt="Leslie Alexander Li">
+                  </a>
+                  <div class="card-body pb-1">
+                    <span class="badge badge-warning mb-3">HR &amp; Recruiting</span>
+                    <h3 class="h5 mb-2 pt-1 nav-dark">
+                      <a class="nav-link" href="course-single.html">HR  Management and Analytics</a>
+                    </h3>
+                  </div>
+                  <div class="card-footer pt-2 pb-4 border-0">
+                    <div class="text-muted">
+                      <span class="font-weight-bold text-primary">$200</span>
+                      <span class="text-border px-1">|</span>
+                      by Leslie Alexander Li
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <!-- Item -->
+              <div class="cs-grid-item marketing col-lg-4 col-sm-6 mb-sm-grid-gutter mb-3">
+                <article class="cs-image-scale card card-hover box-shadow h-100">
+                  <a class="cs-image-inner card-header p-0 border-0 card-image-top" href="course-single.html">
+                    <img src="../../assets/img/online-courses/courses/curator/04.jpg" alt="Kristin Watson">
+                  </a>
+                  <div class="card-body pb-1">
+                    <span class="badge badge-success mb-3">Marketing</span>
+                    <h3 class="h5 mb-2 pt-1 nav-dark">
+                      <a class="nav-link" href="course-single.html">Brand Management &amp; PR Communications</a>
+                    </h3>
+                  </div>
+                  <div class="card-footer pt-2 pb-4 border-0">
+                    <div class="text-muted">
+                      <span class="font-weight-bold text-primary">$530</span>
+                      <span class="text-border px-1">|</span>
+                      by Kristin Watson
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <!-- Item -->
+              <div class="cs-grid-item design col-lg-4 col-sm-6 mb-sm-grid-gutter mb-3">
+                <article class="cs-image-scale card card-hover box-shadow h-100">
+                  <a class="cs-image-inner card-header p-0 border-0 card-image-top" href="course-single.html">
+                    <img src="../../assets/img/online-courses/courses/curator/05.jpg" alt="Guy Hawkins">
+                  </a>
+                  <div class="card-body pb-1">
+                    <span class="badge text-light mb-3" style="background-color: #F52F6E;">Design</span>
+                    <h3 class="h5 mb-2 pt-1 nav-dark">
+                      <a class="nav-link" href="course-single.html">Graphic Design Basic</a>
+                    </h3>
+                  </div>
+                  <div class="card-footer pt-2 pb-4 border-0">
+                    <div class="text-muted">
+                      <span class="font-weight-bold text-primary">$500</span>
+                      <span class="text-border px-1">|</span>
+                      by Guy Hawkins
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <!-- Item -->
+              <div class="cs-grid-item management col-lg-4 col-sm-6 mb-sm-grid-gutter mb-3">
+                <article class="cs-image-scale card card-hover box-shadow h-100">
+                  <a class="cs-image-inner card-header p-0 border-0 card-image-top" href="course-single.html">
+                    <img src="../../assets/img/online-courses/courses/curator/06.jpg" alt="Dianne Russell">
+                  </a>
+                  <div class="card-body pb-1">
+                    <span class="badge badge-info mb-3">Management</span>
+                    <h3 class="h5 mb-2 pt-1 nav-dark">
+                      <a class="nav-link" href="course-single.html">Business Development Management</a>
+                    </h3>
+                  </div>
+                  <div class="card-footer pt-2 pb-4 border-0">
+                    <div class="text-muted">
+                      <span class="font-weight-bold text-primary">$400</span>
+                      <span class="text-border px-1">|</span>
+                      by Dianne Russell
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <!-- Item -->
+              <div class="cs-grid-item development col-lg-4 col-sm-6 mb-sm-grid-gutter mb-3">
+                <article class="cs-image-scale card card-hover box-shadow h-100">
+                  <a class="cs-image-inner card-header p-0 border-0 card-image-top" href="course-single.html">
+                    <img src="../../assets/img/online-courses/courses/curator/07.jpg" alt="Brooklyn Simmons">
+                  </a>
+                  <div class="card-body pb-1">
+                    <span class="badge text-light mb-3" style="background-color: #7772F1;">Development</span>
+                    <h3 class="h5 mb-2 pt-1 nav-dark">
+                      <a class="nav-link" href="course-single.html">Highload Software Architecture</a>
+                    </h3>
+                  </div>
+                  <div class="card-footer pt-2 pb-4 border-0">
+                    <div class="text-muted">
+                      <span class="font-weight-bold text-primary">$600</span>
+                      <span class="text-border px-1">|</span>
+                      by Brooklyn Simmons
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <!-- Item -->
+              <div class="cs-grid-item hr-recruiting col-lg-4 col-sm-6 mb-sm-grid-gutter mb-3">
+                <article class="cs-image-scale card card-hover box-shadow h-100">
+                  <a class="cs-image-inner card-header p-0 border-0 card-image-top" href="course-single.html">
+                    <img src="../../assets/img/online-courses/courses/curator/08.jpg" alt="Kathryn Murphy">
+                  </a>
+                  <div class="card-body pb-1">
+                    <span class="badge badge-warning mb-3">HR &amp; Recruiting</span>
+                    <h3 class="h5 mb-2 pt-1 nav-dark">
+                      <a class="nav-link" href="course-single.html">Human Resources – Selection and Recruitment</a>
+                    </h3>
+                  </div>
+                  <div class="card-footer pt-2 pb-4 border-0">
+                    <div class="text-muted">
+                      <span class="font-weight-bold text-primary">$150</span>
+                      <span class="text-border px-1">|</span>
+                      by Kathryn Murphy
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <!-- Item -->
+              <div class="cs-grid-item marketing col-lg-4 col-sm-6 mb-sm-grid-gutter mb-3">
+                <article class="cs-image-scale card card-hover box-shadow h-100">
+                  <a class="cs-image-inner card-header p-0 border-0 card-image-top" href="course-single.html">
+                    <img src="../../assets/img/online-courses/courses/curator/09.jpg" alt="Cody Fisher">
+                  </a>
+                  <div class="card-body pb-1">
+                    <span class="badge text-light mb-3" style="background-color: #F52F6E;">Design</span>
+                    <h3 class="h5 mb-2 pt-1 nav-dark">
+                      <a class="nav-link" href="course-single.html">User Experience. Human-centered Design</a>
+                    </h3>
+                  </div>
+                  <div class="card-footer pt-2 pb-4 border-0">
+                    <div class="text-muted">
+                      <span class="font-weight-bold text-primary">$240</span>
+                      <span class="text-border px-1">|</span>
+                      by Cody Fisher
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>  
+          </div>
+
+          <!-- Load more btn -->
+          <div class="mt-sm-5 mt-4 text-center">
+            <button class="btn btn-lg btn-link load-more-btn p-0 text-decoration-none" type="button">
+              <i class="cxi-arrow-convert mt-n1 mr-3 align-middle"></i>
+              Load more
+            </button>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Testimonials -->
+      <section class="bg-secondary jarallax" data-jarallax data-speed="0.8">
+        <div class="jarallax-img" style="background-image: url(../../assets/img/online-courses/home/shapes/03-team-testimonials.svg);"></div>
+        <div class="container pt-lg-6 pt-5 pb-lg-5 pb-4">
+          <h3 class="h6 mb-2 text-uppercase text-sm-center">Testimonials</h3>
+          <h2 class="h1 mb-lg-5 pb-md-2 text-sm-center">What our students say</h2>
+          
+          <!-- Carousel -->
+          <div class="cs-carousel cs-nav-outside cs-controls-outside pb-4">
+            <div class="cs-carousel-inner" data-carousel-options='{
+              "autoHeight": true,
+              "responsive": {
+                "0": {
+                  "controls": false
+                },
+                "768": {
+                  "controls": true
+                }
+              }
+            }'>
+
+              <!-- Carousel item -->
+              <div class="px-md-4">
+                <div class="blockquote-card card border-0 mb-md-4">
+                  <div class="card-body mt-sm-4 mx-xl-5 mx-sm-4 pb-0">
+                    <blockquote class="blockquote">
+                      <p class="lead">Vero dolores exercitationem quidem eum sit accusamus. Quisquam cumque nesciunt fugiat quae delectus quo earum deleniti, labore odio sint recusandae aperiam aut nemo placeat pariatur beatae dignissimos amet quos! A ipsam soluta possimus quisquam commodi natus nam aperiam ratione deleniti.</p>
+                    </blockquote>
+                  </div>
+                  <div class="card-footer mb-sm-4 mx-xl-5 mx-sm-4 pt-0 border-0 media align-items-center">
+                    <img class="mr-3 rounded-circle" src="../../assets/img/online-courses/testimonials/01.jpg" width="72" alt="Author">
+                    <div class="media-body">
+                      <h3 class="h6 mb-0">Courtney Alexander</h3>
+                      <span class="font-size-sm text-muted">Position, Company </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Carousel item -->
+              <div class="px-md-4">
+                <div class="blockquote-card card border-0 mb-md-4">
+                  <div class="card-body mt-sm-4 mx-xl-5 mx-sm-4 pb-0">
+                    <blockquote class="blockquote">
+                      <p class="lead">Optio deleniti eos harum minus mollitia aut labore maxime rem ex dolores, dignissimos quidem exercitationem dicta praesentium quasi quia nam expedita sed blanditiis alias facere magnam pariatur asperiores. Ad et ullam eos maiores culpa reiciendis delectus ipsa. Eveniet tempora vel quo repellendus nihil, veniam numquam.</p>
+                    </blockquote>
+                  </div>
+                  <div class="card-footer mb-sm-4 mx-xl-5 mx-sm-4 pt-0 border-0 media align-items-center">
+                    <img class="mr-3 rounded-circle" src="../../assets/img/online-courses/testimonials/02.jpg" width="72" alt="Author">
+                    <div class="media-body">
+                      <h3 class="h6 mb-0">Eleanor Pena</h3>
+                      <span class="font-size-sm text-muted">Position, Course</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Certificate -->
+      <section class="container py-lg-6 py-5">
+        <div class="row align-items-center py-3">
+          <div class="col-md-5 col-sm-6 mr-auto">
+            <div class="col-lg-9 px-0">
+              <h3 class="h6 mb-2 text-uppercase">Createx certificate</h3>
+              <h2 class="h1 mb-lg-5">Your expertise will be confirmed</h2>
+              <p>We are accredited by international professional organizations and institutes:</p>
+            </div>
+            <ul class="list-unstyled d-flex flex-sm-nowrap flex-wrap">
+              <li class="mb-lg-0 mb-3 mr-4 pr-3">
+                <img src="../../assets/img/online-courses/logo/eu-business-school.svg" alt="EU Business School">
+              </li>
+              <li class="mb-lg-0 mb-3 mr-4 pr-3">
+                <img src="../../assets/img/online-courses/logo/mcgill-university.svg" alt="Mcgill University">
+              </li>
+              <li class="mb-lg-0 mb-3 mr-4 pr-3">
+                <img src="../../assets/img/online-courses/logo/incae-business-school.svg" alt="Incae Business School">
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-7 col-sm-6">
+            <img src="../../assets/img/online-courses/courses/certificate.jpg" alt="Certificate" class="rounded box-shadow position-relative">
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Subscribe -->
+      <section class="py-lg-6 py-md-5 py-4 bg-faded-primary bg-no-repeat bg-position-center-bottom bg-size-contain" style="background-image: url(../../assets/img/online-courses/subscribe-bg.png);">
+        <div class="container pt-md-4 pt-3 pb-md-5 pb-4">
+          <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-10">
+              <h3 class="h6 mb-2 text-uppercase text-center">Don’t miss anything</h3>
+              <h2 class="h1 mb-lg-5 pb-md-2 text-center">Subscribe to the Createx School announcements</h2>
+            </div>
+            <div class="col-lg-6 col-md-8 col-sm-10">
+              <form class="input-group needs-validation" novalidate>
+                <input class="form-control rounded bg-light" type="email" placeholder="Your working email" required>
+                <div class="input-group-append">
+                  <button class="btn btn-gradient btn-hover-shadow ml-md-4 ml-sm-3 ml-2 rounded" type="submit">Subscribe</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="cs-footer pt-sm-5 pt-4 bg-dark">
+      <div class="container py-3">
+        <div class="row">
+          <div class="col-lg-3 col-md-4 col-sm-6 order-lg-1 order-1 mb-lg-0 mb-4">
+            <a class="d-inline-block mb-4" href="index.html">
+              <img src="../../assets/img/online-courses/logo-light.svg" width="130" alt="Createx logo">
+            </a>
+            <p class="mb-sm-4 mb-3 pb-lg-3 font-size-xs text-light opacity-60">Createx Online School is a leader in online studying. We have lots of courses and programs from the main market experts. We provide relevant approaches to online learning, internships and employment in the largest companies in the country.</p>
+            <a href="#" class="social-btn mr-1 mb-2 mt-md-0 mt-sm-1">
+              <i class="cxi-facebook"></i>
+            </a>
+            <a href="#" class="social-btn mr-1 mb-2 mt-md-0 mt-sm-1">
+              <i class="cxi-twitter"></i>
+            </a>
+            <a href="#" class="social-btn mr-1 mb-2 mt-md-0 mt-sm-1">
+              <i class="cxi-youtube"></i>
+            </a>
+            <a href="#" class="social-btn mr-1 mb-2 mt-md-0 mt-sm-1">
+              <i class="cxi-telegram"></i>
+            </a>
+            <a href="#" class="social-btn mr-1 mb-2 mt-md-0 mt-sm-1">
+              <i class="cxi-instagram"></i>
+            </a>
+            <a href="#" class="social-btn mb-1 mt-md-0 mt-sm-1">
+              <i class="cxi-linkedin"></i>
+            </a>
+          </div>
+          <div class="col-lg-2 col-sm-12 col-6 order-lg-2 order-sm-4 order-1 mb-lg-0 mb-4">
+            <h3 class="h6 mb-2 pb-1 text-uppercase text-light">Site map</h3>
+            <ul class="nav nav-light flex-lg-column flex-sm-row flex-column">
+              <li class="nav-item mb-2">
+                <a href="about.html" class="nav-link mr-lg-0 mr-sm-4 p-0 font-weight-normal">About Us</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="courses.html" class="nav-link mr-lg-0 mr-sm-4 p-0 font-weight-normal">Courses</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="events.html" class="nav-link mr-lg-0 mr-sm-4 p-0 font-weight-normal">Events</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="blog.html" class="nav-link mr-lg-0 mr-sm-4 p-0 font-weight-normal">Blog</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="contacts.html" class="nav-link mr-lg-0 mr-sm-4 p-0 font-weight-normal">Contacts</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-sm-12 col-6 order-lg-3 order-sm-5 order-2 mb-lg-0 mb-4">
+            <h3 class="h6 mb-2 pb-1 text-uppercase text-light">Courses</h3>
+            <ul class="nav nav-light flex-lg-column flex-sm-row flex-column">
+              <li class="nav-item mb-2">
+                <a href="courses.html" class="nav-link mr-lg-0 mr-sm-4 p-0 font-weight-normal">Marketing</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="courses.html" class="nav-link mr-lg-0 mr-sm-4 p-0 font-weight-normal">Management</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="courses.html" class="nav-link mr-lg-0 mr-sm-4 p-0 font-weight-normal">HR &amp; Recruting</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="courses.html" class="nav-link mr-lg-0 mr-sm-4 p-0 font-weight-normal">Design</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="courses.html" class="nav-link mr-lg-0 mr-sm-4 p-0 font-weight-normal">Development</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-4 order-lg-4 order-sm-3 order-3 mb-md-0 mb-4">
+            <h3 class="h6 mb-2 pb-1 text-uppercase text-light">Contact us</h3>
+            <ul class="nav nav-light flex-md-column flex-sm-row flex-column">
+              <li class="nav-item mb-2">
+                <a href="tel:(405)555-0128" class="nav-link mr-md-0 mr-sm-4 p-0 font-weight-normal text-nowrap">
+                  <i class="cxi-iphone mr-2"></i>
+                  (405) 555-0128
+                </a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="mailto:hello@example.com" class="nav-link mr-md-0 mr-sm-4 p-0 font-weight-normal text-nowrap">
+                  <i class="cxi-chat mr-2"></i>
+                  hello@example.com
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 order-lg-5 order-sm-2 order-4 mb-sm-0 mb-4">
+            <h3 class="h6 mb-2 pb-1 text-uppercase text-light">Sign up to our newsletter</h3>
+            <form>
+              <div class="input-group-overlay input-group-light form-group mb-2 pb-1">
+                <input class="form-control appended-form-control" type="text" placeholder="Email address*">
+                <div class="input-group-append-overlay">
+                  <span class="input-group-text">
+                    <button class="btn btn-link bt-sm px-0" type="submit">
+                      <i class="cxi-arrow-right lead mt-n1"></i>
+                    </button>
+                  </span>
+                </div>
+              </div>
+              <small class="form-text font-size-xxs text-light">*Subscribe to our newsletter to receive early discount offers, updates and new products info.</small>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div style="background-color: #292C37;">
+        <div class="container py-2">
+          <div class="d-flex align-items-sm-center justify-content-between py-1">
+            <div class="font-size-xs text-light">
+              <span class="d-sm-inline d-block mb-1">
+                <span class="font-size-sm">&copy; </span>
+                All rights reserved.
+              </span>
+              Made with 
+              <i class="cxi-heart mt-n1 mx-1 font-size-base text-primary align-middle"></i>
+              <a href="https://createx.studio/" class="text-light" target="_blank" rel="noopener noreferrer">by Createx Studio</a>
+            </div>
+            <div class="d-flex align-items-sm-center">
+              <span class="d-sm-inline-block d-none text-light font-size-sm mr-3 mb-1 align-vertical">Back to top</span>
+              <a class="btn-scroll-top position-static rounded" href="#top" data-scroll>
+                <i class="btn-scroll-top-icon cxi-angle-up"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Vendor scripts: js libraries and plugins-->
+    <script src="assets/vendor/jquery/dist/jquery.slim.min.js"></script>
+    <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="assets/vendor/jarallax/dist/jarallax.min.js"></script>
+    <script src="assets/vendor/simplebar/dist/simplebar.min.js"></script>
+    <script src="assets/vendor/tiny-slider/dist/min/tiny-slider.js"></script>
+    <script src="assets/vendor/mixitup/dist/mixitup.min.js"></script>
+
+    <!-- Main theme script-->
+    <script src="assets/js/theme.min.js"></script>
+  </body>
+</html>

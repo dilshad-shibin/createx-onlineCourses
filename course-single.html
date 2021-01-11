@@ -1,0 +1,1256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Createx | Online Courses - Course Single</title>
+
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="Createx - Multipurpose Bootstrap Template">
+    <meta name="keywords" content="bootstrap, business, creative agency, construction, services, e-commerce, mobile app showcase, multipurpose, shop, ui kit, marketing, seo, landing, html5, css3, javascript, gallery, slider, touch, creative">
+    <meta name="author" content="Createx Studio">
+
+    <!-- Viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon and Touch Icons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/site.webmanifest">
+    <link rel="mask-icon" color="#5bbad5" href="assets/img/safari-pinned-tab.svg">
+    <meta name="msapplication-TileColor" content="#766df4">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Vendor Styles-->
+    <link rel="stylesheet" media="screen" href="assets/vendor/simplebar/dist/simplebar.min.css"/>
+    <link rel="stylesheet" media="screen" href="assets/vendor/tiny-slider/dist/tiny-slider.css"/>
+
+    <!-- Main Theme Styles + Bootstrap-->
+    <link rel="stylesheet" media="screen" href="assets/css/demo/online-courses/theme.min.css">
+    
+    <!-- Page loading styles-->
+    <style>
+      .cs-page-loading {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-transition: all .4s .2s ease-in-out;
+        transition: all .4s .2s ease-in-out;
+        background-color: #fff;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 9999;
+      }
+      .cs-page-loading.active {
+        opacity: 1;
+        visibility: visible;
+      }
+      .cs-page-loading-inner {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        -webkit-transition: opacity .2s ease-in-out;
+        transition: opacity .2s ease-in-out;
+        opacity: 0;
+      }
+      .cs-page-loading.active > .cs-page-loading-inner {
+        opacity: 1;
+      }
+      .cs-page-loading-inner > span {
+        display: block;
+        font-size: 1rem;
+        font-weight: normal;
+        color: #787a80;
+      }
+      .cs-page-spinner {
+        display: inline-block;
+        width: 2.75rem;
+        height: 2.75rem;
+        margin-bottom: .75rem;
+        vertical-align: text-bottom;
+        background-color: #cfcfd1; 
+        border-radius: 50%;
+        opacity: 0;
+        -webkit-animation: spinner .75s linear infinite;
+        animation: spinner .75s linear infinite;
+      }
+      @-webkit-keyframes spinner {
+        0% {
+          -webkit-transform: scale(0);
+          transform: scale(0);
+        }
+        50% {
+          opacity: 1;
+          -webkit-transform: none;
+          transform: none;
+        }
+      }
+      @keyframes spinner {
+        0% {
+          -webkit-transform: scale(0);
+          transform: scale(0);
+        }
+        50% {
+          opacity: 1;
+          -webkit-transform: none;
+          transform: none;
+        }
+      }
+    </style>
+
+    <!-- Page loading scripts-->
+    <script>
+      (function () {
+        window.onload = function () {
+          var preloader = document.querySelector('.cs-page-loading');
+          preloader.classList.remove('active');
+          setTimeout(function () {
+            preloader.remove();
+          }, 2000);
+        };
+      })();
+    </script>
+
+    <!-- Demo switcher off-canvas toggle styles -->
+    <style>
+      .cs-demo-switcher {
+        position: fixed;
+        display: block;
+        top: 50%;
+        right: 1rem;
+        z-index: 100;
+      }
+      .cs-demo-switcher-inner {
+        width: 3rem;
+        height: 3rem;
+        border: 1px solid #e5e8ed;
+        border-radius: 50%;
+        background-color: #fff;
+        color: #1e212c;
+        font-size: 1.25rem;
+        line-height: 3rem;
+        text-align: center;
+        text-decoration: none;
+        box-shadow: 0px 10px 15px 0px rgba(30,33,44,0.10);
+      }
+    </style>
+
+    <!-- Google Tag Manager -->
+    <script>
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-WKV3GT5');
+    </script>
+  </head>
+
+  <!-- Body-->
+  <body>
+    
+    <!-- Google Tag Manager (noscript)-->
+    <noscript>
+      <iframe src="//www.googletagmanager.com/ns.html?id=GTM-WKV3GT5" height="0" width="0" style="display: none; visibility: hidden;"></iframe>
+    </noscript>
+
+    <!-- Page loading spinner-->
+    <div class="cs-page-loading active">
+      <div class="cs-page-loading-inner">
+        <div class="cs-page-spinner"></div><span>Loading...</span>
+      </div>
+    </div>
+
+    <!-- Main content-->
+    <!-- Wraps everything except footer to push footer to the bottom of the page if there is little content -->
+    <main class="cs-page-wrapper position-relative">
+
+
+      <!-- Demo switcher off-canvas -->
+      <div id="demo-switcher" class="cs-offcanvas cs-offcanvas-right">
+        <div class="cs-offcanvas-cap d-block border-bottom">
+          <div class="d-flex justify-content-between align-items-center">
+            <h2 class="h5 mb-0">Choose Demo</h2>
+            <button class="close mr-n1" type="button" data-dismiss="offcanvas" aria-label="Close">
+              <span class="h3 font-weight-normal mb-0" aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="d-flex pt-3">
+            <a href="../../index.html" class="btn btn-sm btn-outline-secondary btn-block my-0 mr-2">
+              <i class="cxi-home font-size-base mr-1"></i>
+             Main Page
+            </a>
+            <a href="../components/typography.html" class="btn btn-sm btn-outline-secondary btn-block my-0">
+              <i class="cxi-files font-size-base mr-1"></i>
+             Docs / UI Kit
+            </a>
+          </div>
+        </div>
+        <div class="cs-offcanvas-body pt-4 pb-3" data-simplebar data-simplebar-auto-hide="true">
+          <a href="../creative-agency/index.html" class="d-block cs-heading-highlight box-shadow-sm rounded-bottom pb-3 mb-4">
+            <img src="../../assets/img/demo-switcher/creative-agency.jpg" class="d-block rounded-top mb-2" alt="Creative Agency">
+            <h6 class="mb-0 pt-1 text-center">Creative Agency</h6>
+          </a>
+          <a href="../ecommerce/index.html" class="d-block cs-heading-highlight box-shadow-sm rounded-bottom pb-3 mb-4">
+            <img src="../../assets/img/demo-switcher/ecommerce.jpg" class="d-block rounded-top mb-2" alt="E-Commerce">
+            <h6 class="mb-0 pt-1 text-center">E-Commerce</h6>
+          </a>
+          <a href="../construction/index.html" class="d-block cs-heading-highlight box-shadow-sm rounded-bottom pb-3 mb-4">
+            <img src="../../assets/img/demo-switcher/construction.jpg" class="d-block rounded-top mb-2" alt="Construction Bureau">
+            <h6 class="mb-0 pt-1 text-center">Construction Bureau</h6>
+          </a>
+          <a href="../seo-agency/index.html" class="d-block cs-heading-highlight box-shadow-sm rounded-bottom pb-3 mb-4">
+            <img src="../../assets/img/demo-switcher/seo-agency.jpg" class="d-block rounded-top mb-2" alt="SEO & Marketing Agency">
+            <h6 class="mb-0 pt-1 text-center">SEO &amp; Marketing Agency</h6>
+          </a>
+          <a href="../online-courses/index.html" class="d-block cs-heading-highlight box-shadow-sm rounded-bottom pb-3 mb-4">
+            <img src="../../assets/img/demo-switcher/online-courses.jpg" class="d-block rounded-top mb-2" alt="Online Courses">
+            <h6 class="mb-0 pt-1 text-center">Online Courses</h6>
+          </a>
+        </div>
+        <div class="cs-offcanvas-cap flex-column border-top">
+          <a href="https://themes.getbootstrap.com/product/createx-multipurpose-template-ui-kit/" class="btn btn-primary btn-block" target="_blank" rel="noopener">
+            <i class="cxi-cart mt-n1 mr-2"></i>
+            Buy Createx
+          </a>
+        </div>
+      </div>
+
+
+      <!-- Demo switcher off-canvas toggle -->
+      <a href="#" class="cs-demo-switcher" data-toggle="offcanvas" data-target="demo-switcher">
+        <div class="cs-demo-switcher-inner" data-toggle="tooltip" data-placement="left" title="Choose Demo">
+          <i class="cxi-layouts"></i>
+        </div>
+      </a>
+
+
+      <!-- Sign in modal-->
+      <div class="modal fade" id="modal-signin" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content border-0">
+
+            <!-- Sign in form -->
+            <div class="cs-view show" id="modal-signin-view">
+              <div class="modal-header border-0 pb-0 px-md-5 px-4 d-block position-relative">
+                <h3 class="modal-title mt-4 mb-0 text-center">Sign in</h3>
+                <button type="button" class="close position-absolute" style="top: 1.5rem; right: 1.5rem;" data-dismiss="modal" aria-label="Close">
+                  <i class="cxi-cross" aria-hidden="true"></i>
+                </button>
+              </div>
+              <div class="modal-body px-md-5 px-4">
+                <p class="font-size-sm text-muted text-center">Sign in to your account using email and password provided during registration.</p>
+                <form class="needs-validation" novalidate>
+                  <div class="form-group">
+                    <label for="signin-email">Email</label>
+                    <input type="email" class="form-control" id="signin-email" placeholder="Your email address" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="signin-password" class="form-label">Password</label>
+                    <div class="cs-password-toggle input-group-overlay">
+                      <input type="password" class="form-control appended-form-control" id="signin-password" placeholder="Your password" required>
+                      <div class="input-group-append-overlay">
+                        <label class="btn cs-password-toggle-btn input-group-text">
+                          <input type="checkbox" class="custom-control-input">
+                          <i class="cxi-eye cs-password-toggle-indicator"></i>
+                          <span class="sr-only">Show password</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center form-group">
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="remember-me" checked>
+                      <label for="remember-me" class="custom-control-label">Remember me</label>
+                    </div>
+                    <a href="#" class="font-size-sm text-decoration-none">Forgot password?</a>
+                  </div>
+                  <button type="submit" class="btn btn-primary btn-hover-shadow btn-block">Sign in</button>
+                  <p class="font-size-sm pt-4 mb-0">
+                    Don't have an account?
+                    <a href="#" class="font-weight-bold text-decoration-none" data-view="#modal-signup-view">Sign up</a>
+                  </p>
+                </form>
+              </div>
+            </div>
+
+            <!-- Sign up form -->
+            <div class="cs-view" id="modal-signup-view">
+              <div class="modal-header border-0 pb-0 px-md-5 px-4 d-block position-relative">
+                <h3 class="modal-title mt-4 mb-0 text-center">Sign up</h3>
+                <button type="button" class="close position-absolute" style="top: 1.5rem; right: 1.5rem;" data-dismiss="modal" aria-label="Close">
+                  <i class="cxi-cross" aria-hidden="true"></i>
+                </button>
+              </div>
+              <div class="modal-body px-md-5 px-4">
+                <p class="font-size-sm text-muted text-center">Sign in to your account using email and password provided during registration.</p>
+                <form class="needs-validation" novalidate>
+                  <div class="form-group">
+                    <label for="signup-name">Full name</label>
+                    <input type="text" class="form-control" id="signup-name" placeholder="Your full name" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="signup-email">Email</label>
+                    <input type="email" class="form-control" id="signup-email" placeholder="Your email address" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="signup-password" class="form-label">Password</label>
+                    <div class="cs-password-toggle input-group-overlay">
+                      <input type="password" class="form-control appended-form-control" id="signup-password" placeholder="Your password" required>
+                      <div class="input-group-append-overlay">
+                        <label class="btn cs-password-toggle-btn input-group-text">
+                          <input type="checkbox" class="custom-control-input">
+                          <i class="cxi-eye cs-password-toggle-indicator"></i>
+                          <span class="sr-only">Show password</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="signup-confirm-password" class="form-label">Confirm password</label>
+                    <div class="cs-password-toggle input-group-overlay">
+                      <input type="password" class="form-control appended-form-control" id="signup-confirm-password" placeholder="Confirm your password" required>
+                      <div class="input-group-append-overlay">
+                        <label class="btn cs-password-toggle-btn input-group-text">
+                          <input type="checkbox" class="custom-control-input">
+                          <i class="cxi-eye cs-password-toggle-indicator"></i>
+                          <span class="sr-only">Show password</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="btn btn-primary btn-hover-shadow btn-block" type="submit">Sign up</button>
+                  <p class="font-size-sm pt-4 mb-0">Already have an account?
+                    <a href="#" class="font-weight-bold text-decoration-none" data-view="#modal-signin-view">Sign in</a>
+                  </p>
+                </form>
+              </div>
+            </div>
+            <div class="modal-body text-center px-0 pt-2 pb-4">
+              <hr>
+              <p class="font-size-sm text-heading mb-3 pt-4">Or sign in with</p>
+              <a href="#" class="social-btn mx-1 mb-2" data-toggle="tooltip" title="Facebook">
+                <i class="cxi-facebook"></i>
+              </a>
+              <a href="#" class="social-btn mx-1 mb-2" data-toggle="tooltip" title="Google">
+                <i class="cxi-google"></i>
+              </a>
+              <a href="#" class="social-btn mx-1 mb-2" data-toggle="tooltip" title="Twitter">
+                <i class="cxi-twitter"></i>
+              </a>
+              <a href="#" class="social-btn mx-1 mb-2" data-toggle="tooltip" title="LinkedIn">
+                <i class="cxi-linkedin"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Navbar -->
+      <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page -->
+      <header class="cs-header navbar navbar-expand-lg navbar-light navbar-sticky navbar-floating">
+        <div class="container px-0 px-xl-3">
+          <a class="navbar-brand order-lg-1 mr-lg-5 mr-0 pr-lg-2" href="index.html">
+            <img src="../../assets/img/online-courses/logo-dark.svg" alt="Createx Logo" width="130">
+          </a>
+          <div class="d-flex align-items-center order-lg-3">
+            <a class="btn btn-gradient btn-hover-shadow d-sm-inline-block d-none ml-4" href="contacts.html">Get consultation</a>
+            <a href="#modal-signin" data-toggle="modal" data-view="#modal-signin-view" class="btn-link d-lg-inline-block d-none ml-4 text-decoration-none text-nowrap">
+              <i class="cxi-profile mt-n1 mr-2 lead align-middle"></i>
+              Sign in / up
+            </a>
+            <button class="navbar-toggler ml-1 mr-n3" type="button" data-toggle="collapse" data-target="#navbarCollapse1" aria-expanded="false">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+          <nav class="collapse navbar-collapse order-lg-2" id="navbarCollapse1">
+            <ul class="navbar-nav mr-auto text-nowrap">
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active" href="#" data-toggle="dropdown">Courses</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="courses.html">Courses Grid</a></li>
+                  <li><a class="dropdown-item" href="course-single.html">Single Course</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Events</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="events-list.html">Events List</a></li>
+                  <li><a class="dropdown-item" href="events-grid.html">Events Grid</a></li>
+                  <li><a class="dropdown-item" href="event-single.html">Event Single</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Blog</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="blog.html">Blog grid</a></li>
+                  <li><a class="dropdown-item" href="blog-single.html">Single Post</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacts.html">Contacts</a>
+              </li>
+              <li class="nav-item d-lg-none d-block">
+                <a href="#modal-signin" data-toggle="modal" data-view="#modal-signin-view" class="nav-link text-decoration-none">
+                  <i class="cxi-profile mt-n1 mr-2 lead align-middle"></i>
+                  Sign in / up
+                </a>
+              </li>
+              <li class="nav-item d-sm-none d-block">
+                <a class="btn btn-sm btn-gradient btn-hover-shadow m-3" href="contacts.html">Get consultation</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+
+      <!-- Page title -->
+      <section class="pt-6 pb-lg-6 pb-sm-5 pb-4 bg-faded-primary jarallax" data-jarallax data-speed="0.8">
+        <div class="jarallax-img" style="background-image: url(../../assets/img/online-courses/courses/single/shapes/01.svg);"></div>
+        <div class="container pt-lg-6 pt-md-5 py-4">
+          <h3 class="h6 mb-2 text-uppercase text-primary text-center">Course</h3>
+          <h1 class="col-lg-10 mx-auto mb-0 text-center">User Experience. Principles of Human-Centered Design</h1>
+        </div>
+      </section>
+
+
+      <!-- About -->
+      <section class="container pt-md-6 py-sm-5 pt-5 pb-4">
+        <div class="row pb-2">
+          <div class="col-md-6 mb-md-0 mb-grid-gutter">
+            <h2 class="h1 pb-sm-3">About the course</h2>
+            <p class="mb-sm-5 mb-grid-gutter">Bibendum vulputate adipiscing venenatis at est, a eu tincidunt. Leo aenean congue in sagittis, felis maecenas amet varius at. Pellentesque euismod in faucibus at elementum. Tellus maecenas libero est tempus sit cras at malesuada diam. Consequat senectus dictumst non hac dignissim montes, pretium, egestas molestie. Sed magna aliquet ornare nibh vel lectus diam eget pretium. Lorem risus nunc tincidunt tortor, mi nulla pellentesque</p>
+            <h3>You will learn:</h3>
+            <ul class="list-unstyled mb-0">
+              <li class="d-flex mb-2">
+                <i class="cxi-check mt-1 mr-3 text-primary"></i>
+                A fermentum in morbi pretium aliquam adipiscing donec tempus.
+              </li>
+              <li class="d-flex mb-2">
+                <i class="cxi-check mt-1 mr-3 text-primary"></i>
+                Vulputate placerat amet pulvinar lorem nisl.
+              </li>
+              <li class="d-flex mb-2">
+                <i class="cxi-check mt-1 mr-3 text-primary"></i>
+                Consequat feugiat habitant gravida quisque elit bibendum id adipiscing sed.
+              </li>
+              <li class="d-flex mb-2">
+                <i class="cxi-check mt-1 mr-3 text-primary"></i>
+                Etiam duis lobortis in fames ultrices commodo nibh.
+              </li>
+              <li class="d-flex mb-2">
+                <i class="cxi-check mt-1 mr-3 text-primary"></i>
+                Fringilla in nec risus congue venenatis pretium posuere nec.
+              </li>
+              <li class="d-flex mb-2">
+                <i class="cxi-check mt-1 mr-3 text-primary"></i>
+                Cursus eu pretium, vulputate tempus quam massa sed at.
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-5 offset-lg-1 col-md-6">
+            <div class="card box-shadow-sm">
+              <div class="card-body">
+                <div class="mb-3 pt-3 px-2">
+                  <h6 class="mb-0 font-size-sm text-uppercase">Dates</h6>
+                  <h4 class="mb-2 text-primary">Sept 7 – Nov 2</h4>
+                  <p class="mb-0">Metus turpis sit lorem lacus, in elit tellus lacus.</p>
+                </div>
+                <div class="mb-3 pt-3 px-2">
+                  <h6 class="mb-0 font-size-sm text-uppercase">Duration</h6>
+                  <h4 class="mb-2 text-primary">2 months – 8 lessons</h4>
+                  <p class="mb-0">Rhoncus pellentesque auctor auctor orci vulputate faucibus quis ut.</p>
+                </div>
+                <div class="mb-3 pt-3 px-2">
+                  <h6 class="mb-0 font-size-sm text-uppercase">Price</h6>
+                  <h4 class="mb-2 text-primary">$120 per month</h4>
+                  <p class="mb-0">Nulla sem adipiscing adipiscing felis fringilla. Adipiscing mauris quam ac elit tristique dis.</p>
+                </div>
+                <div class="mb-3 pt-4 px-2">
+                  <a href="#" class="btn btn-gradient btn-hover-shadow btn-block">Join the course</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Curator -->
+      <section class="container pt-lg-6 py-sm-5 py-4">
+        <div class="row py-2">
+          <div class="col-sm-5 order-sm-1 order-2 mt-sm-0 mt-4 pt-sm-0 pt-3">
+            <div class="position-relative rounded" style="background-color: #FFCF2D;">
+              <img class="d-lg-block d-none w-50 position-absolute" style="right: 80%; bottom: 75%;" src="../../assets/img/online-courses/curator/shape.svg" alt="Shape">
+              <div class="px-3">
+                <img class="mt-n4" src="../../assets/img/online-courses/curator/01.png" alt="Cody Fisher">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 offset-lg-1 col-sm-7 order-sm-2 order-1">
+            <h6 class="mb-2 text-uppercase">Course curator</h6>
+            <h2 class="h1 mb-3">Cody Fisher</h2>
+            <p class="pb-md-2 lead text-muted">Senior UX designer in IT Product Company</p>
+            <ul class="pb-md-3 pb-2 list-unstyled">
+              <li>
+                <i class="cxi-star mt-n1 mr-2 text-primary align-middle"></i>
+                <span class="font-weight-bold">4.9 rate</span>
+              </li>
+              <li>
+                <i class="cxi-play-outline mt-n1 mr-2 text-primary align-middle"></i>
+                <span class="font-weight-bold">4 courses</span>
+              </li>
+              <li>
+                <i class="cxi-profile mt-n1 mr-2 text-primary align-middle"></i>
+                <span class="font-weight-bold">350 students</span>
+              </li>
+            </ul>
+            <p class="pb-md-3">Mattis adipiscing aliquam eu proin metus a iaculis faucibus. Tempus curabitur venenatis, vulputate venenatis fermentum ante. Nisl, amet id semper semper quis commodo, consequat. Massa rhoncus sit morbi odio. Sit maecenas nibh consectetur vel diam. Sem vulputate molestie laoreet at massa sed pharetra. Ac commodo platea id habitasse proin. Nullam sit nec ipsum posuere non. Nam vel aliquam tristique sollicitudin interdum quam. </p>
+            <div>
+              <a href="#" class="social-btn mr-2">
+                <i class="cxi-linkedin"></i>
+              </a>
+              <a href="#" class="social-btn mr-2">
+                <i class="cxi-behance"></i>
+              </a>
+              <a href="#" class="social-btn mr-2">
+                <i class="cxi-facebook"></i>
+              </a>
+              <a href="#" class="social-btn mr-2">
+                <i class="cxi-twitter"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Shaped bg -->
+      <div class="mb-lg-5 mb-4 bg-size-contain bg-position-top bg-no-repeat" style="background-image: url(../../assets/img/online-courses/courses/single/shapes/02.svg);">
+
+
+        <!-- Steps -->
+        <section class="mb-sm-5 mb-4 pt-lg-6 py-sm-5 py-4">
+          <div class="container">
+            <h6 class="mb-2 text-uppercase text-center">Main steps</h6>
+            <h2 class="h1 pb-3 text-center">Online learning process</h2>
+          </div>
+
+          <!-- Carousel -->
+          <div class="container px-0">
+            <div class="cs-carousel cs-nav-outside mt-n4 ml-lg-n5">
+              <div class="cs-carousel-inner pt-4 pl-lg-5" data-carousel-options='{
+                "loop": false,
+                "controls": false,
+                "responsive": {
+                  "0": {
+                    "items": 1
+                  },
+                  "576": {
+                    "items": 2
+                  },
+                  "768": {
+                    "items": 3
+                  },
+                  "992": {
+                    "items": 4
+                  }
+                }
+              }'>
+
+                <!-- Horizontal step item -->
+                <div class="cs-step pt-2 px-3">
+                  <div class="cs-step-head mb-3">
+                    <span class="cs-step-indicator">01</span>
+                    <span class="cs-step-line"></span>
+                  </div>
+                  <div class="cs-step-body">
+                    <h3 class="h5 mb-2">Watching online video lectures</h3>
+                    <p class="mb-0 text-muted">Culpa nostrud commodo ea consequat aliquip reprehenderit. Veniam velit nostrud aliquip sunt.</p>
+                  </div>
+                </div>
+
+                <!-- Horizontal step item -->
+                <div class="cs-step pt-2 px-3">
+                  <div class="cs-step-head mb-3">
+                    <span class="cs-step-indicator">02</span>
+                    <span class="cs-step-line"></span>
+                  </div>
+                  <div class="cs-step-body">
+                    <h3 class="h5 mb-2">Passing test</h3>
+                    <p class="mb-0 text-muted">Anim reprehenderit sint voluptate exercitation adipisicing laborum adipisicing. Minim ad tempor.</p>
+                  </div>
+                </div>
+
+                <!-- Horizontal step item -->
+                <div class="cs-step pt-2 px-3">
+                  <div class="cs-step-head mb-3">
+                    <span class="cs-step-indicator">03</span>
+                    <span class="cs-step-line"></span>
+                  </div>
+                  <div class="cs-step-body">
+                    <h3 class="h5 mb-2">Curator’s feedback</h3>
+                    <p class="mb-0 text-muted">Sit veniam aute dolore adipisicing nulla sit culpa. Minim mollit voluptate ullamco proident ea ad.</p>
+                  </div>
+                </div>
+
+                <!-- Horizontal step item -->
+                <div class="cs-step pt-2 px-3">
+                  <div class="cs-step-head mb-3">
+                    <span class="cs-step-indicator">04</span>
+                  </div>
+                  <div class="cs-step-body">
+                    <h3 class="h5 mb-2">Corrections if needed</h3>
+                    <p class="mb-0 text-muted">Adipisicing esse aliqua aliquip qui amet. Aute eiusmod dolore dolore et ad et veniamad.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Discount -->
+        <section>
+          <div class="container py-5 position-relative">
+            <div class="bg-overlay bg-gradient opacity-25 rounded"></div>
+            <div class="bg-overlay-content py-2 px-lg-5 px-sm-4">
+              <div class="d-flex flex-md-row flex-column align-items-md-start align-items-center justify-content-md-between mb-4">
+                <h2 class="mb-md-0 text-md-left text-center">20% discount for early birds!</h2>
+
+                <!-- Countdown -->
+                <div class="cs-countdown h5 mb-0" data-countdown="10/01/2022 07:00:00 PM">
+                  <div class="cs-countdown-days">
+                    <span class="cs-countdown-value">0</span>
+                    <span class="cs-countdown-label text-body">Days</span>
+                  </div>
+                  <div class="cs-countdown-hours">
+                    <span class="cs-countdown-value">0</span>
+                    <span class="cs-countdown-label text-body">Hours</span>
+                  </div>
+                  <div class="cs-countdown-minutes">
+                    <span class="cs-countdown-value">0</span>
+                    <span class="cs-countdown-label text-body">Mins</span>
+                  </div>
+                  <div class="cs-countdown-seconds">
+                    <span class="cs-countdown-value">0</span>
+                    <span class="cs-countdown-label text-body">Secs</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Discount form -->
+              <form class="row needs-validation" novalidate>
+                <div class="col-lg-3 col-sm-6">
+                  <div class="form-group mb-sm-4 mb-3">
+                    <label for="discount-name">Full name</label>
+                    <input class="form-control" type="text" id="discount-name" placeholder="Your full name" required>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                  <div class="form-group mb-sm-4 mb-3">
+                    <label for="discount-email">Email</label>
+                    <input class="form-control" type="email" id="discount-email" placeholder="Your working email" required>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                  <div class="form-group mb-sm-4 mb-3">
+                    <label for="discount-tel">Phone</label>
+                    <input class="form-control bg-image-0" type="tel" id="discount-tel" placeholder="Your phone number">
+                  </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 d-flex align-items-end pt-sm-0 pt-4">
+                  <button type="submit" class="btn btn-gradient btn-block mb-sm-4">Join the course</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+        
+      </div> <!-- / Shaped bg -->
+
+
+      <!-- Benefits -->
+      <section class="container pt-lg-6 py-sm-5 pt-5 pb-4">
+        <h6 class="mb-2 text-uppercase">For whom?</h6>
+        <div class="row">
+          <div class="col-md-5">
+            <h2 class="h1 mb-3">Who will benefit from the course:</h2>
+          </div>
+          <div class="col-md-6 offset-md-1">
+            <ul class="list-unstyled mb-0">
+              <li class="d-flex mb-2 pb-1">
+                <i class="cxi-check mt-1 mr-3 text-primary"></i>
+                <span class="lead font-weight-bold">Specialists with more than 1 year of active work experience</span>
+              </li>
+              <li class="d-flex mb-2 pb-1">
+                <i class="cxi-check mt-1 mr-3 text-primary"></i>
+                <span class="lead font-weight-bold">Mobile app designers who want to improve their skills in solving business problems, creating and testing human-centered interfaces</span>
+              </li>
+              <li class="d-flex mb-2 pb-1">
+                <i class="cxi-check mt-1 mr-3 text-primary"></i>
+                <span class="lead font-weight-bold">Professional designers who want to feel more confident in UX</span>
+              </li>
+              <li class="d-flex mb-2 pb-1">
+                <i class="cxi-check mt-1 mr-3 text-primary"></i>
+                <span class="lead font-weight-bold">Specialists who would like to structure their knowledge, fill in the gaps</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Program -->
+      <section class="container py-lg-6 py-5">
+        <h6 class="mb-2 text-uppercase">Course program</h6>
+        <div class="row py-md-3 py-lg-0">
+          <div class="col-md-6">
+            <h2 class="h1 pb-md-3">What will you learn</h2>
+
+            <!-- Accordion made of cards -->
+            <div class="accordion" id="accordionProgram">
+
+              <!-- Card -->
+              <div class="card">
+                <div class="card-header pt-0" id="programHeadingOne">
+                  <h5 class="accordion-heading">
+                    <a href="#programCollapseOne" role="button" data-toggle="collapse" aria-expanded="true" aria-controls="programCollapseOne">
+                      <span class="accordion-indicator mt-n1"></span>
+                      <span>
+                        <span class="pr-2 font-weight-normal text-primary">Lesson 1.</span>
+                        Aliquet lectus urna viverra in odio.
+                      </span>
+                    </a>
+                  </h5>
+                </div>
+                <div class="collapse show" id="programCollapseOne" aria-labelledby="programHeadingOne" data-parent="#accordionProgram">
+                  <div class="card-body">
+                    Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card -->
+              <div class="card">
+                <div class="card-header" id="programHeadingTwo">
+                  <h5 class="accordion-heading">
+                    <a href="#programCollapseTwo" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="programHeadingTwo" class="collapsed">
+                      <span class="accordion-indicator mt-n1"></span>
+                      <span>
+                        <span class="pr-2 font-weight-normal text-primary">Lesson 2.</span>
+                        Orci commodo, viverra orci mollis ut euismod.
+                      </span>
+                    </a>
+                  </h5>
+                </div>
+                <div class="collapse" id="programCollapseTwo" aria-labelledby="programHeadingTwo" data-parent="#accordionProgram">
+                  <div class="card-body">
+                    Ipsum aspernatur officiis, obcaecati modi excepturi, consectetur adipisicing elit. Inventore porro molestiae nihil ad aut atque tempora tempore fugiat ipsum aspernatur officiis, obcaecati modi excepturi, aliquid reprehenderit? Sint ullam magni molestias?
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card -->
+              <div class="card">
+                <div class="card-header" id="programHeadingThree">
+                  <h5 class="accordion-heading">
+                    <a href="#programCollapseThree" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="programCollapseThree" class="collapsed">
+                      <span class="accordion-indicator mt-n1"></span>
+                      <span>
+                        <span class="pr-2 font-weight-normal text-primary">Lesson 3.</span>
+                        Sagittis vitae facilisi rutrum amet mauris.
+                      </span>
+                    </a>
+                  </h5>
+                </div>
+                <div class="collapse" id="programCollapseThree" aria-labelledby="programHeadingThree" data-parent="#accordionProgram">
+                  <div class="card-body">
+                    Doloribus quo sed beatae provident placeat voluptate corporis eligendi maxime laborum reprehenderit voluptatibus obcaecati recusandae illum, delectus ipsum ab vitae cum excepturi? Illo ad id mollitia, sit obcaecati qui laborum iste minima deserunt consequatur sunt neque aliquid, error aspernatur!
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card -->
+              <div class="card">
+                <div class="card-header" id="programHeadingFour">
+                  <h5 class="accordion-heading">
+                    <a href="#programCollapseFour" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="programCollapseFour" class="collapsed">
+                      <span class="accordion-indicator mt-n1"></span>
+                      <span>
+                        <span class="pr-2 font-weight-normal text-primary">Lesson 4.</span>
+                        In id dolor quis nunc, urna hendrerit pharetra.
+                      </span>
+                    </a>
+                  </h5>
+                </div>
+                <div class="collapse" id="programCollapseFour" aria-labelledby="programHeadingFour" data-parent="#accordionProgram">
+                  <div class="card-body">
+                    Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card -->
+              <div class="card">
+                <div class="card-header" id="programHeadingFive">
+                  <h5 class="accordion-heading">
+                    <a href="#programCollapseFive" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="programCollapseFive" class="collapsed">
+                      <span class="accordion-indicator mt-n1"></span>
+                      <span>
+                        <span class="pr-2 font-weight-normal text-primary">Lesson 5.</span>
+                        Est, ut tempus id rutrum facilisi.
+                      </span>
+                    </a>
+                  </h5>
+                </div>
+                <div class="collapse" id="programCollapseFive" aria-labelledby="programHeadingFive" data-parent="#accordionProgram">
+                  <div class="card-body">
+                    Doloribus quo sed beatae provident placeat voluptate corporis eligendi maxime laborum reprehenderit voluptatibus obcaecati recusandae illum, delectus ipsum ab vitae cum excepturi? Illo ad id mollitia, sit obcaecati qui laborum iste minima deserunt consequatur sunt neque aliquid, error aspernatur!
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card -->
+              <div class="card">
+                <div class="card-header" id="programHeadingSix">
+                  <h5 class="accordion-heading">
+                    <a href="#programCollapseSix" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="programCollapseSix" class="collapsed">
+                      <span class="accordion-indicator mt-n1"></span>
+                      <span>
+                        <span class="pr-2 font-weight-normal text-primary">Lesson 6.</span>
+                        Amet nec in pellentesque.
+                      </span>
+                    </a>
+                  </h5>
+                </div>
+                <div class="collapse" id="programCollapseSix" aria-labelledby="programHeadingSix" data-parent="#accordionProgram">
+                  <div class="card-body">
+                    Ipsum aspernatur officiis, obcaecati modi excepturi, consectetur adipisicing elit. Inventore porro molestiae nihil ad aut atque tempora tempore fugiat ipsum aspernatur officiis, obcaecati modi excepturi, aliquid reprehenderit? Sint ullam magni molestias?
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card -->
+              <div class="card">
+                <div class="card-header" id="programHeadingSeven">
+                  <h5 class="accordion-heading">
+                    <a href="#programCollapseSeven" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="programCollapseSeven" class="collapsed">
+                      <span class="accordion-indicator mt-n1"></span>
+                      <span>
+                        <span class="pr-2 font-weight-normal text-primary">Lesson 7.</span>
+                        Massa vel arcu mauris, id vel rhoncus mattis quis.
+                      </span>
+                    </a>
+                  </h5>
+                </div>
+                <div class="collapse" id="programCollapseSeven" aria-labelledby="programHeadingSeven" data-parent="#accordionProgram">
+                  <div class="card-body">
+                    Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card -->
+              <div class="card">
+                <div class="card-header" id="programHeadingEight">
+                  <h5 class="accordion-heading">
+                    <a href="#programCollapseEight" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="programCollapseEight" class="collapsed">
+                      <span class="accordion-indicator mt-n1"></span>
+                      <span>
+                        <span class="pr-2 font-weight-normal text-primary">Lesson 8.</span>
+                        Neque, cursus sapien nullam id.
+                      </span>
+                    </a>
+                  </h5>
+                </div>
+                <div class="collapse" id="programCollapseEight" aria-labelledby="programHeadingEight" data-parent="#accordionProgram">
+                  <div class="card-body">
+                    Doloribus quo sed beatae provident placeat voluptate corporis eligendi maxime laborum reprehenderit voluptatibus obcaecati recusandae illum, delectus ipsum ab vitae cum excepturi? Illo ad id mollitia, sit obcaecati qui laborum iste minima deserunt consequatur sunt neque aliquid, error aspernatur!
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 offset-lg-1 col-md-6 mt-md-0 mt-4">
+            <img class="d-block mx-auto" src="../../assets/img/online-courses/courses/single/illustrations/01.svg" alt="Program">
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Parallax wrapper -->
+      <div class="bg-secondary jarallax" data-jarallax data-speed="0.8">
+
+
+        <!-- Parallax image -->
+        <div class="jarallax-img" style="background-image: url(../../assets/img/online-courses/home/shapes/03-team-testimonials.svg);"></div>
+
+
+        <!-- Testimonials -->
+        <section class="container pt-lg-6 pt-5 pb-4">
+          <h3 class="h6 mb-2 text-uppercase text-sm-center">Testimonials</h3>
+          <h2 class="h1 mb-lg-5 pb-md-2 text-sm-center">What our students say</h2>
+          
+          <!-- Carousel -->
+          <div class="cs-carousel cs-nav-outside cs-controls-outside pb-4">
+            <div class="cs-carousel-inner" data-carousel-options='{
+              "autoHeight": true,
+              "responsive": {
+                "0": {
+                  "controls": false
+                },
+                "768": {
+                  "controls": true
+                }
+              }
+            }'>
+
+              <!-- Carousel item -->
+              <div class="px-md-4">
+                <div class="blockquote-card card border-0 mb-md-4">
+                  <div class="card-body mt-sm-4 mx-xl-5 mx-sm-4 pb-0">
+                    <blockquote class="blockquote">
+                      <p class="lead">Vero dolores exercitationem quidem eum sit accusamus. Quisquam cumque nesciunt fugiat quae delectus quo earum deleniti, labore odio sint recusandae aperiam aut nemo placeat pariatur beatae dignissimos amet quos! A ipsam soluta possimus quisquam commodi natus nam aperiam ratione deleniti.</p>
+                    </blockquote>
+                  </div>
+                  <div class="card-footer mb-md-5 mb-4 mx-xl-5 mx-sm-4 pt-0 border-0 media align-items-center">
+                    <img class="mr-3 rounded-circle" src="../../assets/img/online-courses/testimonials/01.jpg" width="72" alt="Author">
+                    <div class="media-body">
+                      <h3 class="h6 mb-0">Courtney Alexander</h3>
+                      <span class="font-size-sm text-muted">Position, Company </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Carousel item -->
+              <div class="px-md-4">
+                <div class="blockquote-card card border-0 mb-md-4">
+                  <div class="card-body mt-sm-4 mx-xl-5 mx-sm-4 pb-0">
+                    <blockquote class="blockquote">
+                      <p class="lead">Optio deleniti eos harum minus mollitia aut labore maxime rem ex dolores, dignissimos quidem exercitationem dicta praesentium quasi quia nam expedita sed blanditiis alias facere magnam pariatur asperiores. Ad et ullam eos maiores culpa reiciendis delectus ipsa. Eveniet tempora vel quo repellendus nihil, veniam numquam.</p>
+                    </blockquote>
+                  </div>
+                  <div class="card-footer mb-md-5 mb-4 mx-xl-5 mx-sm-4 pt-0 border-0 media align-items-center">
+                    <img class="mr-3 rounded-circle" src="../../assets/img/online-courses/testimonials/02.jpg" width="72" alt="Author">
+                    <div class="media-body">
+                      <h3 class="h6 mb-0">Eleanor Pena</h3>
+                      <span class="font-size-sm text-muted">Position, Course</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Register -->
+        <section class="container pb-lg-6 pb-5 pt-4">
+          <div class="row">
+            <div class="col-md-6 order-md-1 order-2">
+              <img src="../../assets/img/online-courses/courses/single/illustrations/02.svg" alt="Register">
+            </div>
+            <div class="col-lg-5 offset-lg-1 col-md-6 order-md-2 order-1 mb-md-0 mb-4">
+              <h3 class="h6 mb-2 text-uppercase">Leave a request now and get 20% off!</h3>
+              <h2 class="h1 mb-lg-5 pb-md-2">Register for the course</h2>
+              <form class="needs-validation" novalidate>
+                <div class="form-group mb-sm-4 mb-3">
+                  <label for="register-name">Full name</label>
+                  <input class="form-control" type="text" id="register-name" placeholder="Your full name" required>
+                </div>
+                <div class="form-group mb-sm-4 mb-3">
+                  <label for="register-email">Email</label>
+                  <input class="form-control" type="text" id="register-email" placeholder="Your working email" required>
+                </div>
+                <div class="form-group mb-sm-4 mb-3">
+                  <label for="register-tel">Phone</label>
+                  <input class="form-control bg-image-0" type="text" id="register-tel" placeholder="Your phone number">
+                </div>
+                <div class="pt-2">
+                  <button type="submit" class="btn btn-gradient btn-hover-shadow btn-block">Join the course</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+
+
+      </div> <!-- / Parallax wrapper -->
+      
+
+      <!-- Other courses -->
+      <section class="container pt-lg-6 pt-5 pb-lg-5 pb-4">
+        <h3 class="h6 mb-2 text-uppercase">Check other courses</h3>
+        <div class="mb-lg-5 mb-4 pb-md-2 d-flex justify-content-between">
+          <h2 class="h1 mb-0">You may also like</h2>
+          <div class="tns-custom-controls cs-controls-inverse mb-md-n4" id="tns-courses-controls" tabindex="0">
+            <button type="button" data-controls="prev" tabindex="-1">
+              <i class="cxi-arrow-left"></i>
+            </button>
+            <button type="button" data-controls="next" tabindex="-1">
+              <i class="cxi-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+        
+        <!-- Carousel component -->
+        <div class="cs-carousel">
+          <div class="cs-carousel-inner" data-carousel-options='{
+            "gutter": 30,
+            "nav": false,
+            "controlsContainer": "#tns-courses-controls",
+            "responsive": {
+              "0": {
+                "items": 1
+              },
+              "768": {
+                "items": 2
+              }
+            }
+          }'>
+            <div class="mb-5 pb-md-4">
+              <a href="#" class="card card-horizontal card-hover box-shadow cs-heading-highlight">
+                <div class="card-img-top bg-position-center-top" style="background-image: url(../../assets/img/online-courses/courses/curator/01.jpg);"></div>
+                <div class="card-body">
+                  <span class="badge badge-success mb-3 font-size-sm">Marketing</span>
+                  <h5 class="card-title hover-heading mb-3 py-1">The Ultimate Google Ads Training Course</h5>
+                  <div class="text-muted">
+                    <span class="font-weight-bold text-primary">$100</span>
+                    <span class="text-border px-1">|</span>
+                    by Jerome Bell
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="mb-5 pb-md-4">
+              <a href="#" class="card card-horizontal card-hover box-shadow cs-heading-highlight">
+                <div class="card-img-top bg-position-center-top" style="background-image: url(../../assets/img/online-courses/courses/curator/02.jpg);"></div>
+                <div class="card-body">
+                  <span class="badge badge-info mb-3 font-size-sm">Management</span>
+                  <h5 class="card-title hover-heading mb-3 py-1">Product Management Fundamentals</h5>
+                  <div class="text-muted">
+                    <span class="font-weight-bold text-primary">$480</span>
+                    <span class="text-border px-1">|</span>
+                    by Jerome Bell
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="mb-5 pb-md-4">
+              <a href="#" class="card card-horizontal card-hover box-shadow cs-heading-highlight">
+                <div class="card-img-top bg-position-center-top" style="background-image: url(../../assets/img/online-courses/courses/curator/03.jpg);"></div>
+                <div class="card-body">
+                  <span class="badge badge-warning mb-3 font-size-sm">HR &amp; Recruting</span>
+                  <h5 class="card-title hover-heading mb-3 py-1">HR  Management and Analytics</h5>
+                  <div class="text-muted">
+                    <span class="font-weight-bold text-primary">$200</span>
+                    <span class="text-border px-1">|</span>
+                    by Jerome Bell
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="mb-5 pb-md-4">
+              <a href="#" class="card card-horizontal card-hover box-shadow cs-heading-highlight">
+                <div class="card-img-top bg-position-center-top" style="background-image: url(../../assets/img/online-courses/courses/curator/04.jpg);"></div>
+                <div class="card-body">
+                  <span class="badge badge-success mb-3 font-size-sm">Marketing</span>
+                  <h5 class="card-title hover-heading mb-3 py-1">Brand Management & PR Communications</h5>
+                  <div class="text-muted">
+                    <span class="font-weight-bold text-primary">$530</span>
+                    <span class="text-border px-1">|</span>
+                    by Jerome Bell
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="mb-5 pb-md-4">
+              <a href="#" class="card card-horizontal card-hover box-shadow cs-heading-highlight">
+                <div class="card-img-top bg-position-center-top" style="background-image: url(../../assets/img/online-courses/courses/curator/05.jpg);"></div>
+                <div class="card-body">
+                  <span class="badge badge-info mb-3 font-size-sm">Management</span>
+                  <h5 class="card-title hover-heading mb-3 py-1">Business Development Management</h5>
+                  <div class="text-muted">
+                    <span class="font-weight-bold text-primary">$400</span>
+                    <span class="text-border px-1">|</span>
+                    by Jerome Bell
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="mb-5 pb-md-4">
+              <a href="#" class="card card-horizontal card-hover box-shadow cs-heading-highlight">
+                <div class="card-img-top bg-position-center-top" style="background-image: url(../../assets/img/online-courses/courses/curator/06.jpg);"></div>
+                <div class="card-body">
+                  <span class="badge mb-3 font-size-sm text-light" style="background-color: #F52F6E;">Design</span>
+                  <h5 class="card-title hover-heading mb-3 py-1">Graphic Design Basic</h5>
+                  <div class="text-muted">
+                    <span class="font-weight-bold text-primary">$500</span>
+                    <span class="text-border px-1">|</span>
+                    by Jerome Bell
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <h4 class="h3 text-center">
+          Do you want more?
+          <a href="courses.html" class="btn btn-lg btn-gradient btn-hover-shadow d-sm-inline-block d-block mt-sm-0 mt-4 ml-sm-4">Explore all events</a>
+        </h4>
+      </section>
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="cs-footer pt-sm-5 pt-4 bg-dark">
+      <div class="container py-3">
+        <div class="row">
+          <div class="col-lg-3 col-md-4 col-sm-6 order-lg-1 order-1 mb-lg-0 mb-4">
+            <a class="d-inline-block mb-4" href="index.html">
+              <img src="../../assets/img/online-courses/logo-light.svg" width="130" alt="Createx logo">
+            </a>
+            <p class="mb-sm-4 mb-3 pb-lg-3 font-size-xs text-light opacity-60">Createx Online School is a leader in online studying. We have lots of courses and programs from the main market experts. We provide relevant approaches to online learning, internships and employment in the largest companies in the country.</p>
+            <a href="#" class="social-btn mr-1 mb-2 mt-md-0 mt-sm-1">
+              <i class="cxi-facebook"></i>
+            </a>
+            <a href="#" class="social-btn mr-1 mb-2 mt-md-0 mt-sm-1">
+              <i class="cxi-twitter"></i>
+            </a>
+            <a href="#" class="social-btn mr-1 mb-2 mt-md-0 mt-sm-1">
+              <i class="cxi-youtube"></i>
+            </a>
+            <a href="#" class="social-btn mr-1 mb-2 mt-md-0 mt-sm-1">
+              <i class="cxi-telegram"></i>
+            </a>
+            <a href="#" class="social-btn mr-1 mb-2 mt-md-0 mt-sm-1">
+              <i class="cxi-instagram"></i>
+            </a>
+            <a href="#" class="social-btn mb-1 mt-md-0 mt-sm-1">
+              <i class="cxi-linkedin"></i>
+            </a>
+          </div>
+          <div class="col-lg-2 col-sm-12 col-6 order-lg-2 order-sm-4 order-1 mb-lg-0 mb-4">
+            <h3 class="h6 mb-2 pb-1 text-uppercase text-light">Site map</h3>
+            <ul class="nav nav-light flex-lg-column flex-sm-row flex-column">
+              <li class="nav-item mb-2">
+                <a href="about.html" class="nav-link mr-lg-0 mr-sm-4 p-0 font-weight-normal">About Us</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="courses.html" class="nav-link mr-lg-0 mr-sm-4 p-0 font-weight-normal">Courses</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="events.html" class="nav-link mr-lg-0 mr-sm-4 p-0 font-weight-normal">Events</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="blog.html" class="nav-link mr-lg-0 mr-sm-4 p-0 font-weight-normal">Blog</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="contacts.html" class="nav-link mr-lg-0 mr-sm-4 p-0 font-weight-normal">Contacts</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-sm-12 col-6 order-lg-3 order-sm-5 order-2 mb-lg-0 mb-4">
+            <h3 class="h6 mb-2 pb-1 text-uppercase text-light">Courses</h3>
+            <ul class="nav nav-light flex-lg-column flex-sm-row flex-column">
+              <li class="nav-item mb-2">
+                <a href="courses.html" class="nav-link mr-lg-0 mr-sm-4 p-0 font-weight-normal">Marketing</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="courses.html" class="nav-link mr-lg-0 mr-sm-4 p-0 font-weight-normal">Management</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="courses.html" class="nav-link mr-lg-0 mr-sm-4 p-0 font-weight-normal">HR &amp; Recruting</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="courses.html" class="nav-link mr-lg-0 mr-sm-4 p-0 font-weight-normal">Design</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="courses.html" class="nav-link mr-lg-0 mr-sm-4 p-0 font-weight-normal">Development</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-4 order-lg-4 order-sm-3 order-3 mb-md-0 mb-4">
+            <h3 class="h6 mb-2 pb-1 text-uppercase text-light">Contact us</h3>
+            <ul class="nav nav-light flex-md-column flex-sm-row flex-column">
+              <li class="nav-item mb-2">
+                <a href="tel:(405)555-0128" class="nav-link mr-md-0 mr-sm-4 p-0 font-weight-normal text-nowrap">
+                  <i class="cxi-iphone mr-2"></i>
+                  (405) 555-0128
+                </a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="mailto:hello@example.com" class="nav-link mr-md-0 mr-sm-4 p-0 font-weight-normal text-nowrap">
+                  <i class="cxi-chat mr-2"></i>
+                  hello@example.com
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 order-lg-5 order-sm-2 order-4 mb-sm-0 mb-4">
+            <h3 class="h6 mb-2 pb-1 text-uppercase text-light">Sign up to our newsletter</h3>
+            <form>
+              <div class="input-group-overlay input-group-light form-group mb-2 pb-1">
+                <input class="form-control appended-form-control" type="text" placeholder="Email address*">
+                <div class="input-group-append-overlay">
+                  <span class="input-group-text">
+                    <button class="btn btn-link bt-sm px-0" type="submit">
+                      <i class="cxi-arrow-right lead mt-n1"></i>
+                    </button>
+                  </span>
+                </div>
+              </div>
+              <small class="form-text font-size-xxs text-light">*Subscribe to our newsletter to receive early discount offers, updates and new products info.</small>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div style="background-color: #292C37;">
+        <div class="container py-2">
+          <div class="d-flex align-items-sm-center justify-content-between py-1">
+            <div class="font-size-xs text-light">
+              <span class="d-sm-inline d-block mb-1">
+                <span class="font-size-sm">&copy; </span>
+                All rights reserved.
+              </span>
+              Made with 
+              <i class="cxi-heart mt-n1 mx-1 font-size-base text-primary align-middle"></i>
+              <a href="https://createx.studio/" class="text-light" target="_blank" rel="noopener noreferrer">by Createx Studio</a>
+            </div>
+            <div class="d-flex align-items-sm-center">
+              <span class="d-sm-inline-block d-none text-light font-size-sm mr-3 mb-1 align-vertical">Back to top</span>
+              <a class="btn-scroll-top position-static rounded" href="#top" data-scroll>
+                <i class="btn-scroll-top-icon cxi-angle-up"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Vendor scripts: js libraries and plugins-->
+    <script src="assets/vendor/jquery/dist/jquery.slim.min.js"></script>
+    <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="assets/vendor/jarallax/dist/jarallax.min.js"></script>
+    <script src="assets/vendor/simplebar/dist/simplebar.min.js"></script>
+    <script src="assets/vendor/tiny-slider/dist/min/tiny-slider.js"></script>
+
+    <!-- Main theme script-->
+    <script src="assets/js/theme.min.js"></script>
+  </body>
+</html>
